@@ -1,0 +1,20 @@
+{
+  "name": "appasap-http-client",
+  "packageManager": "yarn@4.1.0",
+  "version": "1.0.0",
+  "main": "http.client.ts",
+  "scripts": {
+    "start": "ts-node http.client.ts"
+  },
+  "author": "MarioMonir",
+  "license": "ISC",
+  "dependencies": {
+    "qs": "^6.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/qs": "^6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
