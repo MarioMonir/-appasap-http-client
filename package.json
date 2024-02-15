@@ -1,10 +1,12 @@
 {
   "name": "appasap-http-client",
-  "packageManager": "yarn@4.1.0",
   "version": "1.0.0",
-  "main": "http.client.ts",
+  "main": "./dist/http.client.js",
   "scripts": {
-    "start": "ts-node http.client.ts"
+    "start": "ts-node ./src/http.client.ts",
+    "dev": "nodemon ./src/http.client.ts",
+    "serve": "node ./dist/http.client.js",
+    "build": "tsc"
   },
   "author": "MarioMonir",
   "license": "ISC",
@@ -14,6 +16,7 @@
   "devDependencies": {
     "@types/node": "^20.11.17",
     "@types/qs": "^6",
+    "nodemon": "^3.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
