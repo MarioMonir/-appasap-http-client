@@ -4,7 +4,6 @@
  *
  * GET /api/user?filter=%7B%7D&range=%5B0%2C9%5D&sort=%5B%22id%22%2C%22ASC%22%5D
  * @link: https://dev.to/nerdyman/replacing-query-string-with-native-urlsearchparams-4kdg
- *
  * @author MarioMonir
  */
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
@@ -23,7 +22,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.httpClient = void 0;
 // -------------------------------------------------
 const qs_1 = __importDefault(require("qs"));
-// -------------------------------------------------
 // -------------------------------------------------
 const httpClient = ({ method = "GET", body = null, headers, url, queryParams = {}, }) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;

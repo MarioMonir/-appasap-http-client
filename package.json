@@ -1,7 +1,13 @@
 {
   "name": "appasap-http-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "repository": {
+    "type": "git",
+    "url":"https://github.com/MarioMonir/appasap-http-client.git"
+  },
   "main": "./dist/http.client.js",
+  "types": "./dist/http.client.d.ts",
+  "files": ["dist"],
   "scripts": {
     "start": "ts-node ./src/http.client.ts",
     "dev": "nodemon ./src/http.client.ts",
@@ -14,8 +20,9 @@
     "qs": "^6.11.2"
   },
   "devDependencies": {
-    "@types/node": "^20.11.17",
-    "@types/qs": "^6",
+    "@changesets/cli": "^2.27.1",
+    "@types/node": "^20.11.19",
+    "@types/qs": "^6.9.11",
     "nodemon": "^3.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
