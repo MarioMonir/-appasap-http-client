@@ -6,6 +6,7 @@
     "url":"https://github.com/MarioMonir/appasap-http-client.git"
   },
   "main": "./dist/http.client.js",
+  "module": "./dist/http.client.js",
   "types": "./dist/http.client.d.ts",
   "files": ["dist"],
   "scripts": {
