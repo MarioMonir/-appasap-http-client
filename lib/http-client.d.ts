@@ -5,21 +5,19 @@
  * @link: https://dev.to/nerdyman/replacing-query-string-with-native-urlsearchparams-4kdg
  * @author MarioMonir
  */
-type HttpClientInput = {
+export type HttpClientInput = {
     url: string;
     method?: "GET" | "POST" | "PUT" | "DELETE";
     body?: BodyInit | null | undefined | object;
     headers?: {};
     queryParams?: any;
 };
-type HttpClientOutput = {
+export type HttpClientOutput = {
     res: Response;
     data: any;
     ok: boolean;
     status: number;
     total: number;
 };
-type HttpClient = (input: HttpClientInput) => Promise<HttpClientOutput>;
-declare const httpClient: HttpClient;
-
-export { type HttpClient, type HttpClientInput, type HttpClientOutput, httpClient };
+export type HttpClient = (input: HttpClientInput) => Promise<HttpClientOutput>;
+export declare const httpClient: HttpClient;
