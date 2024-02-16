@@ -15,18 +15,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.httpClient = void 0;
 // -------------------------------------------------
-const qs_1 = __importDefault(require("qs"));
+const queryString = require('qs');
 // -------------------------------------------------
 const httpClient = ({ method = "GET", body = null, headers, url, queryParams = {}, }) => __awaiter(void 0, void 0, void 0, function* () {
     var _a;
     try {
-        const params = qs_1.default.stringify(queryParams);
+        const params = queryString.stringify(queryParams);
         url = `${url}?${params}`;
         headers = Object.assign({ "content-type": "application/json" }, headers);
         if (body instanceof Object) {
